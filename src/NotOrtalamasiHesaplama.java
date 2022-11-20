@@ -19,7 +19,7 @@ public class NotOrtalamasiHesaplama {
         //Not Hesaplama
         double toplam = (matematik+fizik+kimya+turkce+tarih+muzik);
         double sonuc = toplam/6.0;
-        String gectikaldi = sonuc <60 ? "Ortlamanız " + sonuc + " Kaldınız" : "Ortalamanız " + sonuc + " Geçtiniz";
+        String gectikaldi = sonuc <60 ? "Ortalamanız " + sonuc + " Kaldınız" : "Ortalamanız " + sonuc + " Geçtiniz";
         System.out.println(gectikaldi);
 
     }
