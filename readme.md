@@ -1,0 +1,1 @@
+Patika Adresim  : https://app.patika.dev/mustafakaraman
