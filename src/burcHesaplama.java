@@ -13,7 +13,7 @@ public class burcHesaplama {
             break;
         }
         while (true){
-            System.out.print("Hangi gün doğdunuz 1-31 arasında giriniz : ");
+            System.out.print("Hangi ay doğdunuz 1-12 arasında giriniz : ");
             ay = inp.nextInt();
             if (ay<1||ay>12){
                 System.out.print("Yanlış Girdiniz 1-12 arası bir rakam giriniz. \n");
@@ -21,78 +21,94 @@ public class burcHesaplama {
             }
             break;
         }
-        if (ay==1&&gun>=22){
-            System.out.print("Kova Burcusunuz");
+        if (ay==1){
+            if (gun>=22) {
+                System.out.print("Kova Burcusunuz");
+            }
+            else {
+                System.out.print("Oğlak Burcusunuz");
+            }
         }
-        else {
-            System.out.print("Oğlak Burcusunuz");
+
+        else if (ay==2){
+            if (gun>=20) {
+                System.out.print("Balık Burcusunuz");
+            }
+            else {
+                System.out.print("Kova Burcusunuz");
+            }
         }
-        if (ay==2&&gun>=20){
-            System.out.print("Balık Burcusunuz");
+
+        else if (ay==3) {
+            if (gun >= 21) {
+                System.out.print("Koç Burcusunuz");
+            } else {
+                System.out.print("Balık Burcusunuz");
+            }
         }
-        else {
-            System.out.print("Kova Burcusunuz");
+        else if (ay==4) {
+            if (gun >= 21) {
+                System.out.print("Boğa Burcusunuz");
+            } else {
+                System.out.print("Koç Burcusunuz");
+            }
         }
-        if (ay==3&&gun>=21){
-            System.out.print("Koç Burcusunuz");
+        else if (ay==5) {
+            if (gun >= 22) {
+                System.out.print("İkizler Burcusunuz");
+            } else {
+                System.out.print("Boğa Burcusunuz");
+            }
         }
-        else {
-            System.out.print("Balık Burcusunuz");
+        else if (ay==6) {
+            if (gun >= 23) {
+                System.out.print("Yengeç Burcusunuz");
+            } else {
+                System.out.print("İkizler Burcusunuz");
+            }
         }
-        if (ay==4&&gun>=21){
-            System.out.print("Boğa Burcusunuz");
+        else if (ay==7) {
+            if (gun >= 23) {
+                System.out.print("Aslan Burcusunuz");
+            } else {
+                System.out.print("Yengeç Burcusunuz");
+            }
         }
-        else {
-            System.out.print("Koç Burcusunuz");
+        else if (ay==8) {
+            if (gun >= 23) {
+                System.out.print("Başak Burcusunuz");
+            } else {
+                System.out.print("Aslan Burcusunuz");
+            }
         }
-        if (ay==5&&gun>=22){
-            System.out.print("İkizler Burcusunuz");
+        else if (ay==9) {
+            if (gun >= 23) {
+                System.out.print("Terazi Burcusunuz");
+            } else {
+                System.out.print("Başak Burcusunuz");
+            }
         }
-        else {
-            System.out.print("Boğa Burcusunuz");
+        else if (ay==10) {
+            if (gun >= 23) {
+                System.out.print("Akrep Burcusunuz");
+            } else {
+                System.out.print("Terazi Burcusunuz");
+            }
         }
-        if (ay==6&&gun>=23){
-            System.out.print("Yengeç Burcusunuz");
+        else if (ay==11) {
+            if (gun >= 22) {
+                System.out.print("Yay Burcusunuz");
+            } else {
+                System.out.print("Akrep Burcusunuz");
+            }
         }
-        else {
-            System.out.print("İkizler Burcusunuz");
+        else if (ay==12) {
+            if (gun >= 22) {
+                System.out.print("Oğlak Burcusunuz");
+            } else {
+                System.out.print("Yay Burcusunuz");
+            }
         }
-        if (ay==7&&gun>=23){
-            System.out.print("Aslan Burcusunuz");
-        }
-        else {
-            System.out.print("Yengeç Burcusunuz");
-        }
-        if (ay==8&&gun>=23){
-            System.out.print("Başak Burcusunuz");
-        }
-        else {
-            System.out.print("Aslan Burcusunuz");
-        }
-        if (ay==9&&gun>=23){
-            System.out.print("Terazi Burcusunuz");
-        }
-        else {
-            System.out.print("Başak Burcusunuz");
-        }
-        if (ay==10&&gun>=23){
-            System.out.print("Akrep Burcusunuz");
-        }
-        else {
-            System.out.print("Terazi Burcusunuz");
-        }
-        if (ay==11&&gun>=22){
-            System.out.print("Yay Burcusunuz");
-        }
-        else {
-            System.out.print("Akrep Burcusunuz");
-        }
-        if (ay==12&&gun>=22){
-            System.out.print("Oğlak Burcusunuz");
-        }
-        else {
-            System.out.print("Yay Burcusunuz");
-        }
-        System.out.println("Burç Yorumları Yakında");
+        System.out.println("\n Burç Yorumları Yakında");
     }
 }
